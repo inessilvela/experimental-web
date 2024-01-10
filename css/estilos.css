@@ -1,0 +1,337 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Literata", serif;
+}
+body {
+  margin: 0px;
+}
+body:not(.index) {
+  padding-top: 120px;
+}
+img{
+    max-width: 100%;
+}
+.centered {
+  width: 1200px;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0px auto;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: normal;
+}
+.columnas {
+  display: flex;
+  align-items: center;
+}
+.owl-carousel{
+  margin: 50px auto;
+  width: 800px;
+  max-width: 100%;
+}
+.owl-carousel img {
+  max-height: 800px;
+  object-fit: contain;
+}
+
+/* Header and nav */
+header {
+  opacity: 0;
+  position: fixed;
+  top: -120px;
+  height: 120px;
+  padding: 20px;
+  background-color: white;
+  justify-content: flex-start;
+  width: 100%;
+  left: 0;
+  display: flex;
+  z-index: 8;
+  transition: all 0.5s;
+}
+header.sticky {
+  top: 0;
+  opacity: 1;
+}
+header img {
+  width: 120px;
+}
+nav #toggler {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  cursor: pointer;
+}
+nav .menu {
+  z-index: 9;
+  position: fixed;
+  top: -20px;
+  right: -150px;
+  background-color: #fdf7f7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 60px 20px 20px;
+  transition: all 0.5s ease-in-out;
+}
+nav .menu.actived {
+  right: 0px;
+  transition: all 0.5s;
+}
+nav .menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+nav .menu a:hover {
+  text-decoration: underline;
+  color: #fc4c01;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  display: flex;
+  color: #ffffff;
+  justify-content: space-between;
+}
+footer .columna {
+  background-color: black;
+  padding: 50px;
+  transition: filter 0.5s;
+}
+footer .columna:hover {
+  filter: invert();
+}
+footer a {
+  color: #ffffff;
+}
+footer a:hover {
+  text-decoration: none;
+}
+
+/* Home */
+#home_header {
+  height: 100vh;
+  background-color: #fc4c01;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 1s;
+}
+#home_header img {
+  width: 300px;
+  max-width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#home_header .down-arrow {
+  position: absolute;
+  top: calc(100vh - 60px);
+  left: calc(50% - 14px);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  animation: blink 1s ease-in-out infinite;
+  transition: filter 0.5s;
+}
+#home_header .down-arrow:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  border-right: 1px solid black;
+}
+
+#home_header .down-arrow:after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  transform: rotateZ(45deg);
+}
+#home_header .down-arrow:hover {
+  animation: none;
+  filter: invert();
+}
+
+#home_main {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+.home_section {
+  width: 50%;
+  height: 25vh;
+  display: block;
+  background: #aba0a0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  transition: all 0.5s;
+  overflow: hidden;
+  position: relative;
+}
+.home_section h2 {
+  padding: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  opacity: 0;
+  background-color: white;
+}
+.home_section:hover h2 {
+  opacity: 1;
+}
+#evolve {
+  background-image: url(../imagenes/joyeria/anillo\ cerilla.jpg);
+}
+#evolve p {
+  font-size: 50px;
+}
+#evolve p span {
+  display: inline-block;
+  transition: all 0.5s;
+}
+#evolve:hover p span {
+  color: red;
+  transform: scale(-1, 1);
+}
+#about {
+  background-color: white;
+  background-image: url(../imagenes/PUBLICIDAD/haribo2.jpg);
+  background-size: contain;
+}
+#about:hover {
+  background-image: url(../imagenes/PUBLICIDAD/haribo1.jpg);
+}
+#producto {
+  background-image: url(../imagenes/Producto/home__0002_leche.png);
+}
+#producto:hover {
+  background-image: url(../imagenes/Producto/home__0003_descarga.jpg);
+}
+#joyeria {
+  background-image: url(../imagenes/joyeria/home__0007_IMG_6309.jpg);
+}
+#joyeria:hover {
+  filter: invert(1);
+}
+#interiores {
+  background-image: url(../imagenes/Interiores/home__0008_trombón.jpg);
+}
+#interiores:hover {
+  background-image: url(../imagenes/Interiores/home__0009_Cafe\ skate.jpg);
+}
+#exteriores {
+  background-image: url(../imagenes/EXTERIORES/home__0010_bici.jpg);
+}
+#exteriores:hover {
+  background-image: url(../imagenes/EXTERIORES/home__0011_Ajedrez.jpg);
+}
+#publicidad {
+  background-image: url(../imagenes/PUBLICIDAD/home__0000_Mujeres\ stabilo.jpg);
+}
+#publicidad:hover {
+  background-image: url(../imagenes/PUBLICIDAD/home__0001_CHANEL.jpg);
+}
+#arte {
+  background-image: url(../imagenes/ARTE/home__0014_wearable\ art\ \ \ morganculture.jpg);
+}
+#arte:hover {
+  background-image: url(../imagenes/ARTE/home__0015_happy\ meal.jpg);
+}
+
+/* About */
+.flexible {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.intro {
+  font-size: 1.5em;
+  padding: 20px;
+}
+.imagenes {
+  display: flex;
+  height: 280px;
+  margin-left: -50px;
+  gap: 20px;
+}
+.rounded {
+  border-radius: 100000px;
+}
+
+/* Evolve */
+#evolve-h1 span {
+  display: inline-block;
+  animation: evolve 3s infinite;
+}
+
+@media screen and (max-width: 768px) {
+  .columnas {
+    flex-direction: column;
+  }
+  .home_section {
+    width: 100%;
+  }
+  .home_section h2 {
+    opacity: 1;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .flexible{
+    flex-direction: column;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+@keyframes evolve {
+  0% {
+    color: black;
+    transform: scale(1);
+  }
+  50% {
+    color: red;
+    transform: scale(-1, 1);
+  }
+  100% {
+    color: black;
+    transform: scale(1);
+  }
+}
