@@ -209,7 +209,7 @@ footer a:hover {
   opacity: 1;
 }
 #evolve {
-  background-image: url(../imagenes/joyeria/anillo\ cerilla.jpg);
+  background-image: url(../imagenes/joyeria/anillo_cerilla.jpg);
 }
 #evolve p {
   font-size: 50px;
@@ -243,10 +243,10 @@ footer a:hover {
   filter: invert(1);
 }
 #interiores {
-  background-image: url(../imagenes/Interiores/home__0008_trombón.jpg);
+  background-image: url(../imagenes/Interiores/home__0008_trombon.jpg);
 }
 #interiores:hover {
-  background-image: url(../imagenes/Interiores/home__0009_Cafe\ skate.jpg);
+  background-image: url(../imagenes/Interiores/home__0009_Cafe_skate.jpg);
 }
 #exteriores {
   background-image: url(../imagenes/EXTERIORES/home__0010_bici.jpg);
@@ -255,16 +255,16 @@ footer a:hover {
   background-image: url(../imagenes/EXTERIORES/home__0011_Ajedrez.jpg);
 }
 #publicidad {
-  background-image: url(../imagenes/PUBLICIDAD/home__0000_Mujeres\ stabilo.jpg);
+  background-image: url(../imagenes/PUBLICIDAD/home__0000_Mujeres_stabilo.jpg);
 }
 #publicidad:hover {
   background-image: url(../imagenes/PUBLICIDAD/home__0001_CHANEL.jpg);
 }
 #arte {
-  background-image: url(../imagenes/ARTE/home__0014_wearable\ art\ \ \ morganculture.jpg);
+  background-image: url(../imagenes/ARTE/home__0014_wearable_art_morganculture.jpg);
 }
 #arte:hover {
-  background-image: url(../imagenes/ARTE/home__0015_happy\ meal.jpg);
+  background-image: url(../imagenes/ARTE/home__0015_happy_meal.jpg);
 }
 
 /* About */
